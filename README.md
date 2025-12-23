@@ -127,6 +127,13 @@ Valid game identifiers are:
 - `pokemon_red`
 - `star_craft`
 
+#### Game-specific setup (local only)
+
+Some games require additional setup before they can run locally:
+
+- **`pokemon_red`**: Follow the official Pokémon Red setup guide (ROM + assets): [docs/setup_pokemon.md](https://github.com/krafton-ai/Orak/blob/release/docs/setup_pokemon.md)
+- **`star_craft`**: Follow the official StarCraft II setup guide (Battle.net install + maps): [docs/setup_star_craft.md](https://github.com/krafton-ai/Orak/blob/release/docs/setup_star_craft.md)
+
 A successful execution will conclude with an evaluation summary. An example output is shown below:
 
 ![](docs/assets/game-ss.png)
