@@ -241,24 +241,8 @@ class PokemonRedEnv(BaseEnv):
         elif self.score == 6:
             if not "OAK's PARCEL" in self.state_dict['inventory']:
                 self.score += 1
-        elif self.score > 6:
-            if not self.map_flag and "TOWN MAP" in self.state_dict['inventory']:
-                self.score += 1
-                self.map_flag = True
-            if not self.ball_flag and "BALL" in self.state_dict['inventory']:
-                self.score += 1
-                self.ball_flag = True
-            if not self.catch_flag and '\nName' in self.state_dict['your_party']:
-                self.score += 1
-                self.catch_flag = True
-            if not self.pewter_flag and "Pewter" in self.state_dict['map_info']['map_name']:
-                self.score += 1
-                self.pewter_flag = True
-            if not self.leader_flag and "Boulder" in self.state_dict['badge_list']:
-                self.score += 1
-                self.leader_flag = True
 
-        if self.score == 12 or self.runner.quit_flag:
+        if self.score == 7 or self.runner.quit_flag:
             done = True
         else:
             done = False
