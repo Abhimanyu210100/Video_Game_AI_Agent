@@ -29,15 +29,28 @@ To securely use such gated public Hugging Face models in your submissions, you m
 
 ---
 
-### Granting Access to `aicrowd`
+### Granting Access to Required Hugging Face Accounts
 
-Follow these steps to grant instant access to the `aicrowd` account:
+To ensure your gated model can be accessed during evaluation, you must explicitly grant access to the required Hugging Face accounts.
 
-1. Go to your model’s settings page on Hugging Face.
-2. Under **Settings**, enable **Access Requests** if not already enabled.
-3. Click **Add Access**, search for **aicrowd**, select the account, and click **Grant Access**.
+#### Required Accounts
 
-> **Note:** This process grants access to the `aicrowd` account **instantaneously**.
+1. **AIcrowd account**  
+   - Hugging Face username: `aicrowd`  
+   - https://huggingface.co/aicrowd  
+
+2. **Krafton evaluation account**  
+   - Hugging Face username: `orak-krafton-eval`  
+   - https://huggingface.co/orak-krafton-eval  
+
+#### Steps to Grant Access
+
+1. Go to your model’s **Settings** page on Hugging Face.
+2. Under **Access Control**, ensure **“Enable Access Requests”** is turned on.
+3. Click **Add Access**, search for `aicrowd`, and grant access.
+4. Repeat the same step to add and grant access to `orak-krafton-eval`.
+
+> **Note:** Access is granted instantaneously. Failure to grant access to **both** accounts may result in evaluation failures.
 
 ---
 
