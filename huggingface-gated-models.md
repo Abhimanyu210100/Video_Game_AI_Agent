@@ -54,21 +54,6 @@ To ensure your gated model can be accessed during evaluation, you must explicitl
 
 ---
 
-### Specifying Your Model in `aicrowd.json`
-
-Clearly specify your model in your `aicrowd.json` file as follows:
-
-```json
-"hf_models": [
-    {
-        "repo_id": "your-hf-username/team-aicrowd-my-model",
-        "revision": "main"
-    }
-]
-```
-
----
-
 ### Important Reminders
 
 - Failure to explicitly grant access to the `aicrowd` account will result in submission failures.
